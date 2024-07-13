@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+
 type ButtonProps = {
   type: "button" | "submit";
   icon?: string;
   variant: string;
   title: string;
+  full?: boolean;
 };
 
 function Button({ title, icon, variant, type }: ButtonProps) {
